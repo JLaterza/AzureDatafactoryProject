@@ -1,0 +1,9 @@
+{
+	"name": "amazingdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "80e8388e-4c5b-41c2-afbe-e55041199932",
+		"tenantId": "f958e84a-92b8-439f-a62d-4f45996b6d07"
+	}
+}

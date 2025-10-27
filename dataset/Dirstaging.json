@@ -1,0 +1,28 @@
+{
+	"name": "Dirstaging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLS",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Synapse Target"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "nyc_payroll_summary.csv",
+				"folderPath": "dirstaging",
+				"fileSystem": "adlsnycpayroll-gabriel-laterza"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
